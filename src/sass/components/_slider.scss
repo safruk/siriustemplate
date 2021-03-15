@@ -1,0 +1,144 @@
+/*
+////////////////////
+//Slider component style
+*/
+
+.slider {
+  &__slide {
+    width: 80%;
+    align-self: center;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    & > * {
+      grid-row: 1;
+      grid-column: 1;
+    }
+    @include respond(tab-port) {
+      align-items: center;
+    }
+  }
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  // /* THIS creates the animation! */
+  transition: transform 1s;
+
+  & > :not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    & > :not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+  &__img-container {
+    flex: 1;
+    object-fit: contain;
+    @include respond(tab-port) {
+      flex: 0 0 50%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    & > :not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__header {
+    color: var(--color-primary-2);
+  }
+
+  &__para {
+    color: var(--color-neutral-1);
+  }
+}
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  border: none;
+  background: var(--color-primary-2);
+  font-family: inherit;
+  color: var(--color-primary-1);
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+  opacity: 0.7;
+  outline: none;
+  @include respond(tab-port) {
+    height: 5.5rem;
+    width: 5.5rem;
+  }
+}
+
+.slider__btn--left {
+  left: 8%;
+  transform: translate(-50%, -50%);
+
+  @include respond(tab-port) {
+    left: 13%;
+  }
+}
+
+.slider__btn--right {
+  right: 8%;
+  transform: translate(50%, -50%);
+
+  @include respond(tab-port) {
+    right: 13%;
+  }
+}
+
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots__dot {
+  border: none;
+  background-color: var(--color-primary-2);
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem hsla(0, 0%, 0%, 0.7); */
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  background-color: var(--color-primary-2);
+  opacity: 1;
+}

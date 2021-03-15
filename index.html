@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="src/images/siriuslogo.svg"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Sirius | Sirius landing page</title>
+
+    <script defer src="./src/js/script.js"></script>
+  </head>
+
+  <body class="container">
+    <!--Navigation section begins here-->
+    <section class="nav__container">
+      <nav class="nav">
+        <img
+          src="src/images/siriuslogo.svg"
+          alt="SiriusIcon"
+          class="nav__icon"
+        />
+        <div class="navigation">
+          <input type="checkbox" class="navigation__checkbox" />
+          <label class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+          </label>
+
+          <!-- Navigation content -->
+          <nav class="navigation__nav">
+            <a href="#section-home" class="navigation__link"> Home</a>
+            <a href="#section-about" class="navigation__link"> About</a>
+            <a href="#section-features" class="navigation__link"> Features</a>
+            <a href="#section-pricing" class="navigation__link"> Pricing</a>
+            <a href="#section-form" class="navigation__link"> Contact</a>
+          </nav>
+
+          <div class="overlay hidden"></div>
+        </div>
+        <button class="btn btn--main nav__btn cta">Let's talk</button>
+      </nav>
+    </section>
+    <!--Navigation section ends-->
+
+    <!-- Header section begins here-->
+    <header class="header" id="section-home">
+      <div class="header__container-Text">
+        <div class="header__text">
+          <h1 class="header__main hover-this">
+            Sirius <br />Web Design & Development
+          </h1>
+          <p class="header__sub">
+            Make an online presence with us. One-stop-shop to make your website
+            look beautiful, classy, modern and much more.
+          </p>
+          <button class="btn btn--sub nav__btn btn-scroll-to">
+            Learn more &rarr;
+          </button>
+        </div>
+      </div>
+
+      <div class="header__container-Hero">
+        <img
+          src="src/images/pexels-dominika-roseclay-1036848.jpg"
+          alt="header-img-1"
+          class="header__img header__img--1"
+        />
+        <img
+          src="src/images/pexels-picjumbocom-196644.jpg"
+          alt="header-img-2"
+          class="header__img header__img--2"
+        />
+        <img
+          src="src/images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg"
+          alt="header-img-3"
+          class="header__img header__img--3"
+        />
+      </div>
+    </header>
+    <!-- Header section ends here-->
+
+    <!-- About section begins here-->
+
+    <section class="section about" id="section-about">
+      <div class="about__container">
+        <div class="about__header hover-this">Who are we?</div>
+        <p class="about__para">
+          Sirius is a web developers and designers agency pioneering in the
+          make, design & code of classy, out-of-the-box websites and web
+          applications.
+        </p>
+
+        <p class="about__para">
+          Established in 2018, We are a team of professionals based in
+          Bangalore,India.
+        </p>
+
+        <p class="about__para">
+          We do all things web and design. We have dedicated artists,
+          developers, designers (UX/UI)experienced over a myriad of projects.
+        </p>
+      </div>
+    </section>
+    <!-- About section ends here-->
+
+    <!-- Feature section begins here-->
+
+    <section class="section feature" id="section-features">
+      <div class="feature__container">
+        <div class="feature__header">
+          <h2 class="feature__header__heading hover-this">What do we do?</h2>
+          <p class="feature__header__para">
+            Choose from our services to leverage your business. We have a
+            dedicated team to do the following
+          </p>
+        </div>
+        <div class="feature__card-container">
+          <div class="feature__card">
+            <div class="feature__card__icon">
+              <img src="src/images/icon-layout.svg" alt="ui-icon" />
+            </div>
+            <h3 class="feature__card__heading">UI/UX Design</h3>
+            <p class="feature__card__text">
+              Website/application design tailormade to suit your business. We
+              offer customized palette and themes.
+            </p>
+          </div>
+          <div class="feature__card">
+            <div class="feature__card__icon">
+              <img src="src/images/icon-code.svg" alt="code-icon" />
+            </div>
+            <h3 class="feature__card__heading">Code</h3>
+            <p class="feature__card__text">
+              Code websites with proper structure imitating the design to pixel
+              perfect accuracy.
+            </p>
+          </div>
+          <div class="feature__card">
+            <div class="feature__card__icon">
+              <img src="src/images/icon-leaf.svg" alt="illus-icon" />
+            </div>
+            <h3 class="feature__card__heading">Illustrations</h3>
+            <p class="feature__card__text">
+              Custom art that compliments your business' online presence. Our
+              team has dedicated artists for the same.
+            </p>
+          </div>
+          <div class="feature__card">
+            <div class="feature__card__icon">
+              <img src="src/images/icon-polygonal.svg" alt="poly-icon" />
+            </div>
+            <h3 class="feature__card__heading">Icons</h3>
+            <p class="feature__card__text">
+              Logos and Icons ranging from minimal, classic, modern and much
+              more to go with your business' branding.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature section ends here-->
+
+    <!-- Slider section begins here-->
+
+    <section class="section slider">
+      <div class="slider__container">
+        <div class="slider__header">
+          <h2 class="slider__header__heading hover-this">Why Choose us?</h2>
+        </div>
+        <div class="slider__slide">
+          <div class="slide slide--1">
+            <div class="slide__img-container">
+              <img
+                src="src/images/domenico-loia-EhTcC9sYXsw-unsplash.jpg"
+                alt="slide-img-one"
+                class="slide__img"
+              />
+            </div>
+            <div class="slide__content">
+              <h3 class="slide__header">Responsive</h3>
+              <p class="slide__para">
+                Variety of screen sizes today make it mandatory for the websites
+                to be viewable across all these platforms. Our Website content
+                scales beautifully across mobile phones, tablets and PCs of any
+                viewport size.
+              </p>
+            </div>
+          </div>
+
+          <div class="slide slide--2">
+            <div class="slide__img-container">
+              <img
+                src="src/images/aron-visuals-BXOXnQ26B7o-unsplash.jpg"
+                alt="slide-img-2"
+                class="slide__img"
+              />
+            </div>
+            <div class="slide__content">
+              <h3 class="slide__header">Time and resources</h3>
+              <p class="slide__para">
+                We know how important your time is and take utmost care in
+                meeting set deadlines. Trust us with your projects and we will
+                deliver them as and when promised.
+              </p>
+            </div>
+          </div>
+
+          <div class="slide slide--3">
+            <div class="slide__img-container">
+              <img
+                src="src/images/benjamin-dada-EDZTb2SQ6j0-unsplash.jpg"
+                alt="slide-img-3"
+                class="slide__img"
+              />
+            </div>
+            <div class="slide__content">
+              <h3 class="slide__header">SEO</h3>
+              <p class="slide__para">
+                Make it to the top of search results with our assistance. We
+                ensure Optimized web assets to help load your websites within 3
+                seconds.Smooth experience with complete accessibility
+                guaranteed!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="slider__btn slider__btn--left">&larr;</button>
+      <button class="slider__btn slider__btn--right">&rarr;</button>
+      <div class="dots"></div>
+    </section>
+    <!-- Slider section ends here-->
+
+    <!-- Pricing section begins here-->
+
+    <section class="section pricing" id="section-pricing">
+      <div class="pricing__container">
+        <div class="pricing__header">
+          <h2 class="pricing__header__heading hover-this">
+            What is best for you?
+          </h2>
+          <p class="pricing__header__para">
+            Website plans for you to select from. Choose what best suits your
+            needs right away without any hesitation!
+          </p>
+        </div>
+
+        <div class="pricing__card-container">
+          <div class="pricing__card">
+            <h3 class="pricing__card__header">BASIC</h3>
+            <ul class="pricing__card__list">
+              <li class="pricing__card__item">👎 Logo</li>
+              <li class="pricing__card__item">👍 Icons</li>
+              <li class="pricing__card__item">👎 Illustrations | Images</li>
+              <li class="pricing__card__item">👍 1 Theme</li>
+              <li class="pricing__card__item">👎 SEO</li>
+            </ul>
+            <button class="btn btn--main pricing__card__btn cta">
+              Request plan
+            </button>
+          </div>
+
+          <div class="pricing__card">
+            <h3 class="pricing__card__header">INTERMEDIATE</h3>
+            <ul class="pricing__card__list">
+              <li class="pricing__card__item">👍 Logo</li>
+              <li class="pricing__card__item">👍 Icons</li>
+              <li class="pricing__card__item">👎 Illustrations | Images</li>
+              <li class="pricing__card__item">👍 1 Theme</li>
+              <li class="pricing__card__item">👎 SEO</li>
+            </ul>
+            <button class="btn btn--main pricing__card__btn cta">
+              Request plan
+            </button>
+          </div>
+
+          <div class="pricing__card">
+            <h3 class="pricing__card__header">ADVANCED</h3>
+            <ul class="pricing__card__list">
+              <li class="pricing__card__item">👍 Logo</li>
+              <li class="pricing__card__item">👍 Icons</li>
+              <li class="pricing__card__item">👍 Illustrations | Images</li>
+              <li class="pricing__card__item">👍 2 Themes</li>
+              <li class="pricing__card__item">👍 SEO</li>
+            </ul>
+            <button class="btn btn--main pricing__card__btn cta">
+              Request plan
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pricing section ends here-->
+
+    <!--Contact/ Form section begins here-->
+
+    <section class="section form__section" id="section-form">
+      <div class="form__container">
+        <h2 class="form__header hover-this">Why wait? Contact us now!</h2>
+        <form
+          action="mailto:webdevelopmentsirius@gmail.com"
+          method="post"
+          enctype="text/plain"
+          id="form"
+          novalidate
+          class="form__style form__style--neutral form__main"
+        >
+          <input
+            title="First Name"
+            aria-label="undefined"
+            required
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            class="form__field form__firstName"
+          />
+          <i class="form__error-msg"></i>
+
+          <input
+            title="Last Name"
+            aria-label="undefined"
+            required
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            class="form__field form__lastName"
+          />
+          <i class="form__error-msg"></i>
+
+          <input
+            title="Email Address"
+            required
+            type="email"
+            name="Your email"
+            placeholder="Email Address"
+            pattern="[^@\s]+@[^@\s+\^@\s]+"
+            aria-label="undefined"
+            class="form__field form__email"
+          />
+          <i class="form__error-msg"> </i>
+
+          <button type="submit" class="btn btn--sub" form="form">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!--Contact/Form section ends here-->
+
+    <!-- Footer begins here-->
+
+    <footer class="footer" id="section-footer">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <img
+            src="src/images/siriuslogowhite.svg"
+            alt="logo-img"
+            class="footer__logo"
+          />
+        </div>
+        <div class="footer__menu">
+          <div class="footer__menu-1">
+            <a href="#section-about" class="footer__link">About</a>
+            <a href="#section-features" class="footer__link"> Features</a>
+            <a href="#section-pricing" class="footer__link">Pricing </a>
+          </div>
+          <div class="footer__menu-2">
+            <a href="tel:+9112345678" class="footer__link">
+              Ph: &nbsp; +91 12345678</a
+            >
+            <a href="mailto:safruk18@gmail.com" class="footer__link"
+              >mail: &nbsp; mail@noreply.com</a
+            >
+            <a
+              href="https://maps.google.com/maps/place/Bengaluru,+Karnataka"
+              class="footer__link"
+              >Addr: &nbsp; lorem road, 5th avenue,<br />
+              Bangalore, India - 566543</a
+            >
+          </div>
+        </div>
+        <div class="footer__social">
+          <div class="footer__social__icons">
+            <a href="https://www.facebook.com/sirius">
+              <img
+                class="footer__social__icon-logo"
+                src="src/images/icon-facebook.svg"
+                alt="fb-logo"
+            /></a>
+            <a href="https://www.youtube.com/sirius">
+              <img
+                class="footer__social__icon-logo"
+                src="src/images/icon-youtube.svg"
+                alt="yt-logo"
+            /></a>
+
+            <a href="https://www.twitter.com/sirius">
+              <img
+                class="footer__social__icon-logo"
+                src="src/images/icon-twitter.svg"
+                alt="twt-logo"
+            /></a>
+            <a href="https://www.pinterest.com/sirius"
+              ><img
+                class="footer__social__icon-logo"
+                src="src/images/icon-pinterest.svg"
+                alt="pint-logo"
+            /></a>
+            <a href="https://www.instagram.com/sirius">
+              <img
+                class="footer__social__icon-logo"
+                src="src/images/icon-instagram.svg"
+                alt="ins-logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <p class="footer__trademark">
+        Sirius web design. &copy;All rights reserved
+      </p>
+    </footer>
+    <!-- Footer ends here-->
+  </body>
+</html>

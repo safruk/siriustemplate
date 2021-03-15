@@ -1,0 +1,65 @@
+/*
+//////////////////////
+////BUTTON
+*/
+.btn {
+  &,
+  &:link,
+  &:visited {
+    height: 4.4rem;
+    width: 16.5rem;
+    border-radius: 10rem;
+    text-align: center;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: inherit;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: transform 0.2s;
+    outline: none;
+    border: none;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    outline: none;
+    border: none;
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+  }
+  &--main {
+    color: var(--color-neutral-2);
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary-2),
+      var(--color-primary-2)
+    );
+  }
+  &--sub {
+    color: var(--color-neutral-1);
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary-1),
+      var(--color-primary-1)
+    );
+  }
+
+  &--cta {
+    background-image: linear-gradient(
+      to right,
+      hsl(54, 100%, 50%),
+      hsl(54, 100%, 50%)
+    );
+  }
+}

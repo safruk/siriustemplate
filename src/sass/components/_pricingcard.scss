@@ -1,0 +1,44 @@
+/*
+//////////////////
+//Pricing Card
+
+*/
+
+.pricing {
+  &__card {
+    max-width: 36rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--color-neutral-1);
+    padding: 3rem;
+    box-shadow: 0 0.5rem 1rem var(--color-neutral-1);
+    backface-visibility: hidden;
+    & > :not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: none;
+    }
+    &__header {
+      // margin-bottom: 2rem;
+    }
+
+    &__list {
+      list-style-type: none;
+      & > :not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__item {
+      color: var(--color-primary-1);
+    }
+
+    &__btn {
+      align-self: center;
+    }
+  }
+}

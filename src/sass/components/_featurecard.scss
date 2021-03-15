@@ -1,0 +1,52 @@
+/*
+////////////
+//Feature card
+*/
+.feature {
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 34rem;
+    & > :not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+    &__icon {
+      display: grid;
+      place-items: center;
+      border: 2px solid var(--color-primary-1);
+      width: 7rem;
+      height: 7rem;
+
+      & > :first-child {
+        width: 85%;
+      }
+    }
+    @include respond(tab-port) {
+      // max-width: 34rem;
+      & > :not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    @include respond(tab-land) {
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+      max-width: 26rem;
+    }
+
+    @include respond(small-desktop) {
+      max-width: 28.5rem;
+    }
+    &__heading {
+      color: var(--color-primary-1);
+    }
+
+    &__text {
+      color: var(--color-neutral-1);
+    }
+  }
+}

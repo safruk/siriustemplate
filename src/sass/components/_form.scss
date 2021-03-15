@@ -1,0 +1,80 @@
+/*
+///////////////
+//FORM STYLES
+*/
+
+.form {
+  &__block {
+    text-align: center;
+  }
+
+  //style for form boxes
+  &__style {
+    text-align: center;
+    padding: 2rem 8rem;
+    box-shadow: 0 1rem 0.5rem HSLA(0, 0%, 0%, 0.2);
+    &--accent {
+      background-color: var(--color-primary-2);
+    }
+    &--neutral {
+      background-color: var(--color-primary-2);
+      background: linear-gradient(
+          to right,
+          transparent -10%,
+          var(--color-primary-2)
+        ),
+        url(~/src/images/chuttersnap-aku7Zlj_x_o-unsplash.jpg) center center
+          no-repeat;
+
+      color: var(--color-primary-1);
+      background-size: cover;
+    }
+  }
+  //the actual form
+  &__main {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    // caret-color: var(--color-primary-2);
+    & > * {
+      margin: 0.65rem 2rem;
+    }
+  }
+  &__field {
+    padding: 1.35rem 3rem;
+    border: 1px solid HSLA(0, 0%, 0%, 0.1);
+    border-radius: 0.5rem;
+    outline: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border: 1px solid var(--color-neutral-1);
+      outline: none;
+    }
+  }
+
+  &__field-clear {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+  // error classes
+
+  &__error-icon {
+    background: no-repeat center right 5% url('../images/icon-error.svg');
+    border: 1px solid var(--color-primary-1);
+  }
+
+  &__error {
+    display: flex;
+    background: no-repeat center right 5% url('../images/icon-error.svg');
+
+    color: var(--color-primary-1);
+    border: 1px solid var(--color-primary-1);
+  }
+  //error msg class
+  &__error-msg {
+    align-self: flex-end;
+  }
+}

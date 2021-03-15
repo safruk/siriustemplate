@@ -1,0 +1,268 @@
+/*
+//////////////////////////
+//Home page
+/////////////////////////////
+*/
+//GENERAL SECTION STYLES
+.section {
+  transition: transform 1s, opacity 1s;
+  // padding: 7rem 3rem 4rem;
+  box-shadow: 0 0 0.1rem currentColor;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+/////////////////////////////
+/////ABOUT-SECTION
+
+.about {
+  background-color: var(--color-primary-1);
+  background: linear-gradient(
+      45deg,
+      transparent -350%,
+      var(--color-primary-1) 100%
+    ),
+    url(~/src/images/ohtilly-2iu_qKPbjSk-unsplash.jpg) center center no-repeat;
+  background-size: cover;
+  color: var(--color-primary-2);
+  padding: 10rem 3rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+  &__container {
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond(tab-land) {
+      align-items: flex-start;
+    }
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+  }
+
+  &__para {
+    color: var(--color-neutral-1);
+    text-align: center;
+    margin-bottom: 2rem;
+
+    @include respond(tab-land) {
+      text-align: left;
+    }
+  }
+}
+
+//////////////////////////////////
+////////FEATURE - SECTION
+.feature {
+  background-color: var(--color-primary-2);
+  padding: 10rem 3rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    & > :not(:last-child) {
+      margin-bottom: 7rem;
+    }
+  }
+  &__header {
+    max-width: 65rem;
+    text-align: center;
+    align-self: center;
+    & > :not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    @include respond(tab-land) {
+      text-align: left;
+      align-self: flex-start;
+    }
+
+    &__heading {
+      color: var(--color-primary-1);
+    }
+    &__para {
+      color: var(--color-neutral-1);
+    }
+  }
+  &__card-container {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    & > * {
+      padding-bottom: 3.5rem;
+    }
+    @include respond(tab-port) {
+      & > * {
+        padding-right: 2rem;
+      }
+    }
+    @include respond(small-desktop) {
+      & > * {
+        padding-right: 4rem;
+      }
+    }
+  }
+}
+
+//SLIDER SECTION
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10rem 3rem;
+  background-color: var(--color-primary-1);
+  overflow: hidden;
+  @include respond(tab-port) {
+    padding: 10rem 16rem;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__header {
+    margin-bottom: 4rem;
+    align-self: flex-start;
+
+    @include respond(tab-land) {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    &__heading {
+      color: var(--color-primary-2);
+    }
+  }
+}
+
+////////////////////////////
+//PRICING SECTION
+
+.pricing {
+  background-color: var(--color-primary-2);
+  padding: 10rem 3rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    & > :not(:last-child) {
+      margin-bottom: 7rem;
+    }
+  }
+  &__header {
+    max-width: 65rem;
+    text-align: center;
+    align-self: center;
+    & > :not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    @include respond(tab-land) {
+      text-align: left;
+      align-self: flex-start;
+    }
+
+    &__heading {
+      color: var(--color-primary-1);
+    }
+    &__para {
+      color: var(--color-neutral-1);
+    }
+  }
+
+  &__card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & > :not(:last-child) {
+      margin-bottom: 3rem;
+    }
+    @include respond(tab-land) {
+      flex-direction: row;
+
+      & > :not(:last-child) {
+        margin-right: 7rem;
+        margin-bottom: unset;
+      }
+    }
+  }
+}
+
+//FORM SECTION
+.form__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  background-color: var(--color-primary-1);
+  @include respond(tab-port) {
+    padding: 10rem;
+  }
+}
+.form {
+  &__container {
+    max-width: 75rem;
+    width: 100%;
+  }
+
+  &__header {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-primary-2);
+    @include respond(tab-land) {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.hover-this {
+  border-bottom: 1rem solid transparent;
+  display: inline-block;
+  &:hover {
+    cursor: pointer;
+    border-bottom: 1rem solid;
+    color: var(--color-neutral-1);
+    border-image: linear-gradient(
+        to right,
+        var(--color-neutral-1),
+        var(--color-primary-2)
+      )
+      1;
+  }
+}

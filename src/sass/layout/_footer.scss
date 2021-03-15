@@ -1,0 +1,133 @@
+/*
+////////////////////////
+////FOOTER - SECTION
+*/
+.footer {
+  width: 100%;
+  background-color: var(--color-primary-2);
+  color: var(--color-neutral-2);
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  padding: 4.5rem 0 1rem;
+  &__container {
+    width: 90%;
+    // flex: 0 0 90%;
+    margin: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+      margin-bottom: 2rem;
+    }
+    @include respond(tab-port) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    @include respond(tab-land) {
+      width: 80%;
+      // flex: 0 0 80%;
+    }
+  }
+  &__logo {
+    justify-self: stretch;
+    // filter: brightness(0) invert(1);
+  }
+  &__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    & > * {
+      margin-bottom: 3rem;
+    }
+    @include respond(tab-port) {
+      align-items: flex-start;
+      & > * {
+        margin-bottom: 1rem;
+      }
+    }
+    &__icons {
+      display: flex;
+      & > :not(:last-child) {
+        margin-right: 2rem;
+      }
+
+      @include respond(tab-port) {
+        & > :not(:last-child) {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+    &__icon-logo {
+      height: 3rem;
+      width: 3rem;
+      // fill: var(--color-neutral-2);
+
+      &:active,
+      &:hover {
+        transform: translateY(-0.2rem);
+        cursor: pointer;
+        // filter: invert(1);
+        // filter: sepia() saturate(10000%) hue-rotate(0deg); 
+      }
+    }
+  }
+
+  &__logo {
+    // filter: hue-rotate(180deg) invert(1) brightness(5);
+    width: 9rem;
+    height: 9rem;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    @include respond(tab-port) {
+      flex-direction: row;
+    }
+  }
+  &__menu-1 {
+    & > * {
+      margin-bottom: 2rem;
+    }
+  }
+  &__menu-2 {
+    & > * {
+      margin-bottom: 2rem;
+    }
+  }
+  &__menu-1,
+  &__menu-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include respond(tab-port) {
+      margin-right: 4rem;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    @include respond(tab-land) {
+      margin-right: 15rem;
+    }
+  }
+  &__link {
+    color: var(--color-neutral-2);
+    text-decoration: none;
+
+    &:active,
+    &:hover {
+      color: var(--color-primary-1);
+    }
+  }
+
+  &__trademark {
+    color: var(--color-neutral-2);
+    opacity: 0.5;
+  }
+}
