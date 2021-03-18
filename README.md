@@ -26,6 +26,12 @@ npm start
 #to change the logo,images add your images in the src/images folder.
 change the name of your website,logo, all of the text,images in the index.html in the src folder
 
+#to change the background images in about and form sections:
+#go to src/sass/pages/home.scss
+change the background: url() in the .about class
+#go to src/sass/components/form.scss
+change the background: url() in the .form class
+
 #to change the theme color of the website go to src/sass/abstracts/variables.scss 
 comment out the --color-primary-1,--color-primary-2,--color-neutral-1,--color-neutral-2 and 
 uncomment out the other color pallete to select colors of your preference
