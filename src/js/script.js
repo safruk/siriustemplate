@@ -58,7 +58,7 @@ function handleSubmit(event) {
 
     window.open(
       `mailto:${emailTo}?cc=${emailCC}&subject=${emailSub}&body=${emailBody}`,
-      '_blank'
+      '_top'
     );
 
     // location.href =
