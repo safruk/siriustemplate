@@ -57,7 +57,7 @@ function handleSubmit(event) {
     const emailBody = 'Hey Sirius I would love to enquire the following';
 
     window.open(
-      `https://mailto:${emailTo}?cc=${emailCC}&subject=${emailSub}&body=${emailBody}`,
+      `mailto:${emailTo}?cc=${emailCC}&subject=${emailSub}&body=${emailBody}`,
       `_top`
     );
 
