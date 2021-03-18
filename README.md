@@ -26,6 +26,8 @@ npm start
 #to change the logo,images add your images in the src/images folder.
 change the name of your website,logo, all of the text,images in the index.html in the src folder
 
+#to change the form details add your email links in both index.html form section and src/js/script.js int he form handlers handleSubmit() function
+ 
 #to change the background images in about and form sections:
 #go to src/sass/pages/home.scss
 change the background: url() in the .about class
